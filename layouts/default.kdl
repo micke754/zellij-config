@@ -117,9 +117,9 @@ layout {
             //color_mantle "#1e2030"
             //color_crust "#181926"
 
-            format_left "#[bg=$pink,fg=$crust,bold]  #[bg=$surface0,fg=$text,bold] {session} #[bg=$surface0] {mode}#[bg=$surface0]{tabs}"
+            format_left "#[bg=$pink,fg=$crust,bold]  #[bg=$surface0,fg=$text] {session} #[bg=$surface0] {mode}#[bg=$surface0]{tabs}"
             format_center "{notifications}"
-            format_right  "#[bg=$surface0,fg=$surface1]#[bg=$surface0,fg=$blue] #[bg=$blue,fg=$crust] 󰃰 #[bg=$surface0,fg=$text,bold] {datetime}#[bg=$surface0,fg=$surface1]"
+            format_right  "#[bg=$surface0,fg=$surface1]#[bg=$surface0,fg=$blue] #[bg=$blue,fg=$crust] 󰃰 #[bg=$surface0,fg=$text] {datetime}#[bg=$surface0,fg=$surface1]"
             format_space  "#[bg=$surface0]"
             format_hide_on_overlength "true"
             format_precedence "lrc"
@@ -131,20 +131,51 @@ layout {
 
             // hide_frame_for_single_pane "true"
 
-            mode_normal        "#[bg=$green,fg=$crust,bold] NORMAL #[bg=$surface0,fg=$green]"
-            mode_tmux          "#[bg=$mauve,fg=$crust,bold] TMUX #[bg=$surface0,fg=$mauve]"
-            mode_locked        "#[bg=$red,fg=$crust,bold] LOCKED #[bg=$surface0,fg=$red]"
-            mode_pane          "#[bg=$teal,fg=$crust,bold] PANE #[bg=$surface0,fg=teal]"
-            mode_tab           " #[bg=$teal,fg=$crust,bold] TAB #[bg=$surface0,fg=$teal]"
-            mode_scroll        "#[bg=$flamingo,fg=$crust,bold] SCROLL #[bg=$surface0,fg=$flamingo]"
-            mode_enter_search  "#[bg=$flamingo,fg=$crust,bold] ENT-SEARCH #[bg=$surfaco,fg=$flamingo]"
-            mode_search        "#[bg=$flamingo,fg=$crust,bold] SEARCHARCH #[bg=$surfac0,fg=$flamingo]"
-            mode_resize        "#[bg=$yellow,fg=$crust,bold] RESIZE #[bg=$surfac0,fg=$yellow]"
-            mode_rename_tab    "#[bg=$yellow,fg=$crust,bold] RENAME-TAB #[bg=$surface0,fg=$yellow]"
-            mode_rename_pane   "#[bg=$yellow,fg=$crust,bold] RENAME-PANE #[bg=$surface0,fg=$yellow]"
-            mode_move          "#[bg=$yellow,fg=$crust,bold] MOVE #[bg=$surface0,fg=$yellow]"
-            mode_session       "#[bg=$pink,fg=$crust,bold] SESSION #[bg=$surface0,fg=$pink]"
-            mode_prompt        "#[bg=$pink,fg=$crust,bold] PROMPT #[bg=$surface0,fg=$pink]"
+   //          mode_normal        "●"  (A solid circle, representing the default and stable state)
+			// mode_tmux          "✹"  (A starburst, signifying control and multi-pane environment)
+			// mode_locked        "🔒"  (A lock icon, universally understood for locked state)
+			// mode_pane          "▤"  (A grid, symbolizing panes/windows in tmux or zellij)
+			// mode_tab           "▸"  (A right arrow, representing moving through tabs)
+			// mode_scroll        "⇳"  (Up-and-down arrow, clearly indicating scroll mode)
+			// mode_enter_search  "🔍"  (A magnifying glass, representing entering search mode)
+			// mode_search        "🧐"  (A focused face, signifying active searching)
+			// mode_resize        "⤢"  (Diagonal arrows, commonly understood for resizing)
+			// mode_rename_tab    "✎"  (A pencil, denoting editing/renaming tabs)
+			// mode_rename_pane   "🖋"  (A fountain pen, denoting editing/renaming panes)
+			// mode_move          "⇶"  (Multi-directional arrows, indicating movement)
+			// mode_session       "⚡"  (A lightning bolt, for session management and switching)
+			// mode_prompt        "⌨"  (A keyboard, clearly representing input prompts)
+
+			// mode_normal        "󰀘 N"   (Circle symbol "󰀘" paired with "N" for Normal mode)
+			// mode_tmux          "󱂬 T"   (Box split glyph "󱂬" paired with "T" for Tmux)
+			// mode_locked        "󰌾 L"   (Lock glyph "󰌾" paired with "L" for Locked mode)
+			// mode_pane          "󰇦 P"   (Window/pane glyph "󰇦" paired with "P")
+			// mode_tab           "󰓩 Tb"  (Tab glyph "󰓩" paired with "Tb")
+			// mode_scroll        "󰔄 Sc"  (Scroll symbol "󰔄" paired with "Sc")
+			// mode_enter_search  "󰍉 Es"  (Magnifying glass "󰍉" paired with "Es")
+			// mode_search        "󰍉 S"   (Magnifying glass "󰍉" paired with "S")
+			// mode_resize        "󰒓 Rz"  (Resize arrows "󰒓" paired with "Rz")
+			// mode_rename_tab    "󰑓 Rt"  (Edit glyph "󰑓" paired with "Rt")
+			// mode_rename_pane   "󰑓 Rp"  (Edit glyph "󰑓" paired with "Rp")
+			// mode_move          "󰯭 Mv"  (Directional arrows "󰯭" paired with "Mv")
+			// mode_session       "󰆑 Ss"  (Session glyph "󰆑" paired with "Ss")
+			// mode_prompt        "󰌌 Pr"  (Keyboard glyph "󰌌" paired with "Pr")
+
+            mode_normal        "#[bg=$green,fg=$crust,bold] 󰀘 N #[bg=$surface0,fg=$green]"
+            mode_tmux          "#[bg=$mauve,fg=$crust,bold] 󱂬 T #[bg=$surface0,fg=$mauve]"
+            mode_locked        "#[bg=$red,fg=$crust,bold] 󰌾 L #[bg=$surface0,fg=$red]"
+            mode_pane          "#[bg=$teal,fg=$crust,bold] 󰇦 P #[bg=$surface0,fg=teal]"
+            mode_tab           "#[bg=$teal,fg=$crust,bold] 󰓩 Tb #[bg=$surface0,fg=$teal]"
+            mode_scroll        "#[bg=$flamingo,fg=$crust,bold] 󰔄 Sc #[bg=$surface0,fg=$flamingo]"
+            mode_enter_search  "#[bg=$flamingo,fg=$crust,bold] 󰍉 Es #[bg=$surfaco,fg=$flamingo]"
+            mode_search        "#[bg=$flamingo,fg=$crust,bold] 󰍉 S #[bg=$surfac0,fg=$flamingo]"
+            mode_resize        "#[bg=$yellow,fg=$crust,bold] 󰒓 Rz #[bg=$surfac0,fg=$yellow]"
+            mode_rename_tab    "#[bg=$yellow,fg=$crust,bold] 󰑓 Rt #[bg=$surface0,fg=$yellow]"
+            mode_rename_pane   "#[bg=$yellow,fg=$crust,bold] 󰑓 Rp #[bg=$surface0,fg=$yellow]"
+            mode_move          "#[bg=$yellow,fg=$crust,bold] 󰯭 Mv #[bg=$surface0,fg=$yellow]"
+            mode_session       "#[bg=$pink,fg=$crust,bold] 󰆑 Ss #[bg=$surface0,fg=$pink]"
+            mode_prompt        "#[bg=$pink,fg=$crust,bold] 󰌌 Pr #[bg=$surface0,fg=$pink]"
+
 
             tab_normal              "#[bg=$surface0,fg=$blue] #[bg=$blue,fg=$crust,bold] {index} #[bg=$surface1,fg=$blue,bold]"
             tab_normal_fullscreen   "#[bg=$surface0,fg=$blue] #[bg=$blue,fg=$crust,bold] {index} #[bg=$surface1,fg=$blue,bold]"
@@ -181,7 +212,7 @@ layout {
     // pane size=1 borderless=true {
     //     plugin location="tab-bar"
     // }
-    pane borderless=true
+    pane
     // pane size=1 borderless=true {
     //     plugin location="status-bar"
     // }
