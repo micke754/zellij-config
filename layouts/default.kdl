@@ -129,7 +129,7 @@ layout {
             border_format   "#[bg=$surface0]{char}"
             border_position "top"
 
-            // hide_frame_for_single_pane "true"
+            hide_frame_for_single_pane "true"
 
    //          mode_normal        "●"  (A solid circle, representing the default and stable state)
 			// mode_tmux          "✹"  (A starburst, signifying control and multi-pane environment)

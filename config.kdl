@@ -279,9 +279,9 @@ scroll_buffer_size 10000
 // Examples:
 //
 // copy_command "xclip -selection clipboard" // x11
-copy_command "xsel --clipboard --output" // x11
+// copy_command "xsel --clipboard --output" // x11
 // copy_command "wl-copy"                    // wayland
-// copy_command "pbcopy"                     // osx
+copy_command "pbcopy"                     // osx
 
 // Choose the destination for copied text
 // Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.
@@ -300,7 +300,7 @@ copy_command "xsel --clipboard --output" // x11
 // Path to the default editor to use to edit pane scrollbuffer
 // Default: $EDITOR or $VISUAL
 //
-scrollback_editor "/home/kmichaels/.cargo/bin/hx"
+scrollback_editor "/Users/kevinmichael/.cargo/bin/hx"
 
 // When attaching to an existing session with other users,
 // should the session be mirrored (true)
@@ -311,8 +311,8 @@ scrollback_editor "/home/kmichaels/.cargo/bin/hx"
 
 // The folder in which Zellij will look for layouts
 //
-layout_dir "/home/kmichaels/.config/zellij/layouts"
+layout_dir "/Users/kevinmichael/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
 //
-theme_dir "/home/kmichaels/.config/zellij/themes"
+theme_dir "/Users/kevinmichael/.config/zellij/themes"
