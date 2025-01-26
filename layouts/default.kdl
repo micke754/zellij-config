@@ -24,10 +24,7 @@ layout {
             color_overlay1 "#7f849c"
             color_overlay0 "#6c7086"
             color_surface2 "#585b70"
-            // color_surface2 "#000000"
             color_surface1 "#45475a"
-            // color_surface1 "#000000"
-            // color_surface0 "#313244"
             color_surface0 "#1E1E2E"
             color_base "#1e1e2e"
             color_mantle "#181825"
@@ -131,36 +128,6 @@ layout {
 
             hide_frame_for_single_pane "true"
 
-   //          mode_normal        "●"  (A solid circle, representing the default and stable state)
-			// mode_tmux          "✹"  (A starburst, signifying control and multi-pane environment)
-			// mode_locked        "🔒"  (A lock icon, universally understood for locked state)
-			// mode_pane          "▤"  (A grid, symbolizing panes/windows in tmux or zellij)
-			// mode_tab           "▸"  (A right arrow, representing moving through tabs)
-			// mode_scroll        "⇳"  (Up-and-down arrow, clearly indicating scroll mode)
-			// mode_enter_search  "🔍"  (A magnifying glass, representing entering search mode)
-			// mode_search        "🧐"  (A focused face, signifying active searching)
-			// mode_resize        "⤢"  (Diagonal arrows, commonly understood for resizing)
-			// mode_rename_tab    "✎"  (A pencil, denoting editing/renaming tabs)
-			// mode_rename_pane   "🖋"  (A fountain pen, denoting editing/renaming panes)
-			// mode_move          "⇶"  (Multi-directional arrows, indicating movement)
-			// mode_session       "⚡"  (A lightning bolt, for session management and switching)
-			// mode_prompt        "⌨"  (A keyboard, clearly representing input prompts)
-
-			// mode_normal        "󰀘 N"   (Circle symbol "󰀘" paired with "N" for Normal mode)
-			// mode_tmux          "󱂬 T"   (Box split glyph "󱂬" paired with "T" for Tmux)
-			// mode_locked        "󰌾 L"   (Lock glyph "󰌾" paired with "L" for Locked mode)
-			// mode_pane          "󰇦 P"   (Window/pane glyph "󰇦" paired with "P")
-			// mode_tab           "󰓩 Tb"  (Tab glyph "󰓩" paired with "Tb")
-			// mode_scroll        "󰔄 Sc"  (Scroll symbol "󰔄" paired with "Sc")
-			// mode_enter_search  "󰍉 Es"  (Magnifying glass "󰍉" paired with "Es")
-			// mode_search        "󰍉 S"   (Magnifying glass "󰍉" paired with "S")
-			// mode_resize        "󰒓 Rz"  (Resize arrows "󰒓" paired with "Rz")
-			// mode_rename_tab    "󰑓 Rt"  (Edit glyph "󰑓" paired with "Rt")
-			// mode_rename_pane   "󰑓 Rp"  (Edit glyph "󰑓" paired with "Rp")
-			// mode_move          "󰯭 Mv"  (Directional arrows "󰯭" paired with "Mv")
-			// mode_session       "󰆑 Ss"  (Session glyph "󰆑" paired with "Ss")
-			// mode_prompt        "󰌌 Pr"  (Keyboard glyph "󰌌" paired with "Pr")
-
             mode_normal        "#[bg=$green,fg=$crust,bold] 󰀘 N #[bg=$surface0,fg=$green]"
             mode_tmux          "#[bg=$mauve,fg=$crust,bold] 󱂬 T #[bg=$surface0,fg=$mauve]"
             mode_locked        "#[bg=$red,fg=$crust,bold] 󰌾 L #[bg=$surface0,fg=$red]"
@@ -193,27 +160,11 @@ layout {
             notification_format_no_notifications ""
             notification_show_interval "10"
 
-            // command_host_command    "uname -n"
-            // command_host_format     "{stdout}"
-            // command_host_interval   "0"
-            // command_host_rendermode "static"
-
-            // command_user_command    "echo \"Ubuntu-24.04\""
-            // command_user_format     "{stdout}"
-            // command_user_interval   "10"
-            // command_user_rendermode "static"
-
             datetime          "{format}"
             datetime_format   "%d-%m %H:%M "
             datetime_timezone "Pacific/Auckland"
 
         }
     }
-    // pane size=1 borderless=true {
-    //     plugin location="tab-bar"
-    // }
     pane
-    // pane size=1 borderless=true {
-    //     plugin location="status-bar"
-    // }
 }
