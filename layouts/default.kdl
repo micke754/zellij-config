@@ -48,9 +48,9 @@ layout {
             border_format   "#[bg=$color_gray]{char}"
             border_position "top"
 
-            // hide_frame_for_single_pane "true"
+            hide_frame_for_single_pane "true"
 
-            mode_normal        "#[bg=$teal,fg=$color_bg,bold] 󰀘 N #[bg=$color_gray,fg=$teal]"
+            mode_normal        "#[bg=$black,fg=$color_bg,bold] 󰀘 N #[bg=$color_gray,fg=$teal]"
             mode_tmux          "#[bg=$purple,fg=$color_bg,bold] 󱂬 T #[bg=$color_gray,fg=$purple]"
             mode_locked        "#[bg=$red,fg=$color_bg,bold] 󰌾 L #[bg=$color_gray,fg=$red]"
             mode_pane          "#[bg=$teal,fg=$color_bg,bold] 󰇦 P #[bg=$color_gray,fg=$teal]"
